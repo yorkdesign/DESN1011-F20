@@ -1,4 +1,7 @@
 /* Uncomment and set these variables to customize the grid. */
+$grid-width: 75rem; //75rem = 1200px
+$grid-margin: 2rem; //2rem = 32px
+$grid-gutter-half: 1rem; //Half of your gutter size: 1rem = 16px
 
 .container-fluid {
   padding: 0;
@@ -11,8 +14,8 @@
 }
 
 .container {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: $grid-margin;
+  padding-left: $grid-margin;
 }
 
 .row {
@@ -29,8 +32,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -$grid-gutter-half;
+  margin-left: -$grid-gutter-half;
 }
 
 .row.reverse {
@@ -64,8 +67,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: $grid-gutter-half;
+  padding-left: $grid-gutter-half;
 }
 
 .col-xs {
@@ -278,8 +281,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $grid-gutter-half;
+    padding-left: $grid-gutter-half;
   }
 
   .col-sm {
@@ -493,8 +496,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $grid-gutter-half;
+    padding-left: $grid-gutter-half;
   }
 
   .col-md {
@@ -688,7 +691,7 @@
 
 @media only screen and (min-width: 75em) {
   .container {
-    width: 75rem;
+    width: $grid-width;
   }
 
   .col-lg,
@@ -708,8 +711,8 @@
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: $grid-gutter-half;
+    padding-left: $grid-gutter-half;
   }
 
   .col-lg {
